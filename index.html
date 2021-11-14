@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LoopMIT</title>
+	 <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+	</script>
+
+</head>
+<body>
+	<div class = "mobile-nav">
+		<div class =  "nav-header">
+			<a ><img id = "dropper" src = "resources/hamburger.png"></a>
+		</div>
+		<div id = "dropdown">
+			<a href = "#about"><div class = "drop-item">ABOUT US</div></a>
+			<a href = "#subsystem"><div class = "drop-item">SUBSYSTEMS</div></a>
+			<a href = "#teams"><div class = "drop-item">OUR TEAM</div></a>
+			<a href = "#sponsors"><div class = "drop-item">SPONSORS</div></a>	
+		</div>
+	</div>
+	<div id = "landing">
+		<div id = "navbar">
+			<ul>
+				<a href = "#about"><li>About us</li></a>
+				<a href = "#subsystem"><li>Our Pod</li></a>
+				<a href = "#teams"><li>Team</li></a>
+				<a href = "#sponsors"><li>Sponsors</li></a>
+			</ul>
+		</div>
+		<div id = "landing-logo">
+			<img src = "loopMIT.png" id = "loop_logo">
+			<div class = "type"><span id = "typewrite"></span><span class = "cursor">|</span></div>
+		</div>
+	</div>
+	<section class = "about" id = "about">
+		loopMIT is a dedicated team of undergraduate students from various fields of engineering working on designing , developing and building a sub scale prototype transport vehicle known as the Hyperloop Pod to partake in the “SpaceX Hyperloop pod design competition” ,where a number of student teams from across the world participate to demonstrate the technical feasibility of various aspects of the Hyperloop concept . We aim to be the first Asian team to enter the competition with a levitating pod.<br><br>
+		A Hyperloop  is a mode of passenger and freight transportation, used to describe an open-source vacuum tube train design released by a joint team from Tesla and SpaceX. Hyperloop is a sealed tube or system of tubes through which a pod may travel free of air resistance or friction conveying people or objects at high speeds efficiently, drastically reducing travel times over medium-range distances.
+<!-- 		<br> 
+The concept was unveiled in 2013 by Elon Musk- founder of SpaceX and Tesla, in which he proposed a “fifth mode of transport” comprised of pressurized capsules riding on an air cushion driven by linear induction motors and air compressors. In 2015, a design competition was announced for teams to build Hyperloop pods to operate on a SpaceX sponsored track. If successful, this would revolutionize the field of transportation across the world	 -->
+	</section>
+	<section class = "subsystem" id = "subsystem">
+		<h1>SUBSYSTEMS</h1><
+		<div class = "flex-container">
+			<div class ="flex-item composites">
+				<h2>COMPOSITES</h2>
+				<ul class = "team-mem">
+					<li>Swetank Awasthi</li>
+					<li>Nithin Nayak</li>
+				</ul>
+				<span class = "info" data-sub = "composites">Materials are integral part of any project.Selection of right material is necessary for converting the design into efficient and sustainable product.In Composite subsystem we aim to use high strength/weight material for the shell and frame of the pod in order achieve high speed by  combating air resistance.</span>
+			</div>
+			<div class ="flex-item composites">
+				<h2>VEHICLE DYNAMICS</h2>
+				<ul class = "team-mem">
+					<li>Karan Kapoor</li>
+					<li>Sameer Yadav</li>
+					<li>Meghashyam Valasa</li>
+					<li>Lalithmalhaar Gudi</li>
+				</ul>
+				<span class = "info vehicle-dynamics" data-sub = "vehicle-dynamics">This subsystem is going to control the motion of the pod. It looks after the propulsion, stability and suspension of the pod. It main aim is to eliminate the oscillations to give smooth ride for the passengers.</span>
+			</div>
+			<div class ="flex-item aerodynamics">
+				<h2>AERODYNAMICS</h2>
+				<ul class = "team-mem">
+					<li>Preyaan Gupta</li>
+					<li>Jeffy Biju</li>
+					<li>Karthik Reddy</li>
+				</ul>
+				<span class = "info" data-sub = "aerodynamics">The goal of the subsystem to is create a aerodynamically efficient pod to minimize losses due to air resistance. It deals with designing the bodywork & designing the framework.</span>
+			</div>
+			<div class ="flex-item levitation">
+				<h2>LEVITATION</h2>
+				<ul class = "team-mem">
+					<li>Aashish Kumar</li>
+					<li>Yash Deodhar</li>
+					<li>Tejas Gajjala</li>
+					<li>Jeyendra Maddali</li>
+				</ul>
+				<span class = "info" data-sub = "levitation">With Levitation we aim to incorporate cutting edge technologies in magnetic fields and their interactions with conductors. We wish to eliminate rolling friction by having the pod 'hover' and attain remarkable speeds with maximum efficiency!</span>
+			</div>
+			<div class ="flex-item electronics">
+				<h2>ELECTRONICS</h2>
+				<ul class = "team-mem">
+					<li>Anirudh Sivakumar</li>
+					<li>Nikhil Gupta</li>
+					<li>Shrinikethan</li>
+					<li>Dev Kashyap</li>
+				</ul>
+				<span class = "info" data-sub = "electronics">Electronics subsystem deals with the entire electrical and electronic components going into the pod, mainly the battery management system, main computer control unit, motor controller, wiring harness and other sensing and automation systems.</span>
+			</div>
+			<div class ="flex-item management">
+				<h2>MANAGEMENT</h2>
+				<ul class = "team-mem">
+					<li>Kunal Thadani</li>
+					<li>Rahul Arutla</li>
+				</ul>
+				<span class = "info" data-sub = "management">The role of the management subsystem is to create a work environment that supports innovative thinking. It comprises of Finances and sponsorships, Media management and web development, Human resources and safety management. It brings together all the other factions of the team to create a Hyperloop pod that is efficient and safe.</span>
+			</div>
+		</div>
+	</section>
+	<section class = "teams" id = "teams">
+		<h1>OUR TEAM</h1>
+		<div class = "team-container">
+			<div class = "member-item">
+				<img src="resources/jash.jpeg">
+				<span class = "name">Jash Shah</span>
+				<span class = "post">Project Head</span>
+			</div>
+			<div class = "member-item">
+				<img src="resources/preyaan.jpeg">
+				<span class = "name">Preyaan Gupta</span>
+				<span class = "post">Technical Head</span>
+			</div>
+			<div class = "member-item">
+				<img src="resources/aashish.png">
+				<span class = "name">Ashish Kumar</span>
+				<span class = "post">Head of Levitation</span>
+			</div>
+			<div class = "member-item">
+				<img src="resources/karan.png">
+				<span class = "name">Karan Kapoor</span>
+				<span class = "post">Head of <br>Vehicle Dynamics</span>
+			</div>
+						<div class = "member-item">
+				<img src="resources/shwetank.jpg">
+				<span class = "name">Swetank Awasthi</span>
+				<span class = "post">Head of Composites</span>
+			</div>
+			<div class = "member-item">
+				<img src="resources/nitin.jpeg">
+				<span class = "name">Nitin Nayak</span>
+				<span class = "post">Head of Composites</span>
+			</div>
+			<div class = "member-item">
+				<img src="resources/anirudh.jpeg">
+				<span class = "name">Anirudh Sivakumar</span>
+				<span class = "post">Head of Electronics</span>
+			</div>
+			<div class = "member-item">
+				<img src="resources/kunal.jpeg">
+				<span class = "name">Kunal Thadani</span>
+				<span class = "post">Head of Management <br>& Web Development</span>
+			</div>
+		</div>
+	</section>
+	<section class = "teams" id = "sponsors">
+		<h1>SPONSORS</h1>
+			<div class = "sponsor-item">
+				<img src="resources/mahe.jpg">
+				<span class = "name sponsors-desc">Powered By</span>
+			</div>
+		<div class = "team-container">
+			<div class = "sponsor-item">
+				<img src="resources/simscale.jpeg">
+				<!-- <span class = "name sponsors-desc">Powered By</span> -->
+			</div>
+			<div class = "sponsor-item">
+				<img src="resources/ansys.jpeg">
+				<!-- <span class = "name sponsors-desc">Powered By</span> -->
+			</div>
+		</div>
+	</section>
+	<section class = "bottom">
+		<img src = "loopMIT.png" class = "bot-logo">
+		<div class = "social">
+			<a href="https://www.facebook.com/pages/category/Science--Technology---Engineering/Loop-MIT-106602960733428/" target="_blank"><i class="fab fa-facebook-square icon"></i></a>
+			<a href="https://instagram.com/loopmit/" target="_blank"><i class="fab fa-instagram  icon"></i></a>
+			<a href="https://www.linkedin.com/company/loopmit" target="_blank"><i class="fab fa-linkedin-in icon"></i></i></a>
+			<a href="https://twitter.com/LoopMit?s=08" target="_blank"><i class="fab fa-twitter-square  icon"></i></a>
+		</div>
+		<!-- <div class = "made">Made in Manipal</div> -->
+	</section>
+</body>
+</html>

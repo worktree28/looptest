@@ -1,0 +1,281 @@
+body,html{
+	height: 100%;
+	margin: 0;
+}
+
+#landing{
+	height: 100%;
+	text-align: center;
+}
+#navbar ul{
+	list-style-type: none;
+	text-align: right;
+	padding: 0 20px;
+	margin: 0;
+}
+#navbar li{
+	font-family: "Segoe UI",'Roboto', Sans-serif;;
+	color: white;
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.type{
+	font-family: Gotham,'Raleway',Sans-serif;
+	color: rgba(256,256,256,0.8);
+	padding: 30px 10px;
+}
+@keyframes blink{
+	0%{
+		opacity: 1;
+	}
+	60%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.cursor{
+	animation-name: blink;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+	font-weight: lighter;
+}
+
+.about{
+	color: #480B65;
+	font-size: 1.1em;
+	font-family: "Segoe UI",'Roboto', Sans-serif;;
+	text-align: center;
+}
+
+@media(min-width: 600px){
+	.sponsor-item img{
+		height:  120px;
+	}
+	#landing{
+		background-image: url("resources/back.png");
+		background-size: cover; 
+	}
+	#landing-logo{
+		padding-top: 150px;
+	}
+	.about{
+		padding: 30px 150px;
+	}
+	.subsystem h1 , .teams h1{
+		font-size: 2.5em;
+	}
+	.flex-item{
+		width: 20%;
+		padding: 40px;	 
+	}
+
+	.team-container{
+		margin: 0 14%;
+	}
+	.member-item{
+		padding: 10px 30px;
+		margin: 0 10px;
+	}	
+	.member-item img{
+		height:  120px;
+	}
+	.post{
+		font-size: 0.9em;
+	}
+	.mobile-nav{
+		display: none;
+	}
+	.type{
+		font-size: 4em;
+	}
+	#loop_logo{
+		height: 150px;
+	}
+	.bottom{
+		height: 300px;
+		padding-top: 50px;
+	}
+}
+
+
+@media(max-width: 599px){
+	.bot-logo{
+		padding-top: 150px;
+	}
+	.sponsor-item img{
+		max-width: 70%;
+	}
+	.bottom{
+		height: 100%;
+		/*padding-top: 30%;*/
+	}
+	#landing{
+		background-image: url("resources/back-mob.png");
+		background-size: cover; 
+	}
+	.drop-item{
+		color: white;
+		text-align: center;
+		font-family: Helvetica,'Roboto', Sans-serif;;
+		padding: 10px 0; 
+		background-color: #64506e;
+		font-weight: bold;
+		font-size: 0.8em;
+	}
+	a{
+		text-decoration: none;
+	}
+	#dropdown{
+		z-index: 10;
+		display: none;
+	}
+	.nav-header{
+		text-align: right;
+		height: 30px;
+	}
+	.mobile-nav img{
+		height: 30px;
+		padding-right: 10px; 
+	}
+	#loop_logo{
+		height: 90px;
+	}
+	#landing-logo{
+		padding-top: 35%;
+	}
+	.type{
+		font-size: 2em;
+	}
+	#navbar{
+		display: none;
+	}
+	.about{
+		padding: 30px 25px;
+	}
+	.subsystem h1 , .teams h1{
+		font-size: 1.5em;
+	}
+	.flex-item{
+		width: 75%;
+		padding: 30px 5%;	 
+	}	
+	.member-item{
+		padding: 10px 10px;
+		margin: 0 10px;
+	}	
+	.member-item img{
+		height:  100px;
+	}
+	.post{
+		font-size: 0.8em;
+	}
+}
+
+.subsystem h1 , .teams h1{
+	font-family: 'Roboto', Sans-serif;;
+	text-align: center;
+	color: #480B65;
+}
+
+
+.flex-container{
+	justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-item h2{
+	font-family: "Segoe UI", 'Roboto', Sans-serif;;
+	/*text-align: center;*/
+	color: #480B65;
+}
+
+.flex-item{
+	color: #480B65;
+	/*text-align: center;*/
+	font-family: "Segoe UI";
+	margin:  30px 0 ;
+	background-size:cover;  
+	box-shadow: 20px 20px 20px rgba(58,0,81,0.1); 
+	min-height: 300px;
+}
+.flex-item:hover{
+	cursor: pointer;
+}
+.team-container{
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.member-item,.sponsor-item{
+		text-align: center;
+}
+.member-item img{
+	border-radius: 50%;
+}
+
+.member-item span, .sponsor-item span{
+	display: block;
+	color: #480B65;
+	padding: 5px 0;
+}
+.name{
+	font-family: Helvetica , 'Roboto', Sans-serif;;
+}
+.post{
+	font-family: 'Roboto', Sans-serif;;
+	font-style: italic;
+}
+.sponsors-desc{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.sponsor-item{
+	padding: 10px 60px;
+}
+.info{
+	display: inline-block;
+}
+.aerodynamics{
+	background-image: url('resources/aerodynamics2.png');
+}
+.levitation{
+	background-image: url('resources/levitation2.png');
+}
+.management{
+	background-image: url('resources/management2.png');	
+}
+.electronics{
+	background-image: url('resources/electronics2.png');	
+}
+.composites{
+	background-image: url('resources/composites2.png');
+}
+.vehicle-dynamics{
+	background-image: url('resources/vehicle-dynamics.png');
+}
+.team-mem{
+	/*list-style-type: none;*/
+	display: none;
+}
+.icon{
+	padding: 15px 10px;
+	color: white;
+}
+.social{
+	text-align: center;
+}
+.bot-logo{
+	height: 120px; 
+	padding-bottom: 25px; 
+}
+.bottom{
+	text-align: center;
+	background-color: #64506e;
+}
